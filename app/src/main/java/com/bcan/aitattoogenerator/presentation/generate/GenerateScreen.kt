@@ -2,11 +2,15 @@ package com.bcan.aitattoogenerator.presentation.generate
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -23,10 +27,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.bcan.aitattoogenerator.presentation.generate.components.DescribeTattooTextField
+import com.bcan.aitattoogenerator.presentation.generate.components.SelectStyleItem
 import com.bcan.aitattoogenerator.presentation.ui.TitleText
 import com.bcan.aitattoogenerator.ui.theme.White
 import com.bcan.aitattoogenerator.ui.theme.getProButtonGradient
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun GenerateScreen() {
 
@@ -66,5 +72,13 @@ fun GenerateScreen() {
         )
 
         TitleText(text = "Select Style".uppercase())
+        FlowRow(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            repeat(10) {
+                SelectStyleItem()
+            }
+        }
     }
 }
