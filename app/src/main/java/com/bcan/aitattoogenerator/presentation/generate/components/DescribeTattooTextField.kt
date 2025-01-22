@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.sp
 import com.bcan.aitattoogenerator.ui.theme.Boulder
 import com.bcan.aitattoogenerator.ui.theme.Heliotrope
 import com.bcan.aitattoogenerator.ui.theme.RoyalBlue
-import com.bcan.aitattoogenerator.ui.theme.getProButtonGradient
+import com.bcan.aitattoogenerator.ui.theme.describeTattooTextFieldGradient
 
 @Composable
 fun DescribeTattooTextField(
@@ -34,7 +34,7 @@ fun DescribeTattooTextField(
             .requiredHeightIn(min = 100.dp)
             .fillMaxWidth()
             .border(
-                border = BorderStroke(1.dp, getProButtonGradient),
+                border = BorderStroke(1.dp, describeTattooTextFieldGradient),
                 shape = RoundedCornerShape(16.dp)
             )
     ) {
