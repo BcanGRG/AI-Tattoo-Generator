@@ -42,7 +42,7 @@ fun AiTattooGeneratorBottomBar(
 ) {
     BottomAppBar(
         containerColor = SmokeyBlack,
-        modifier = Modifier.height(80.dp)
+        modifier = Modifier.height(90.dp)
     ) {
         bottomNavDestinations.forEach { destination ->
             NavigationBarItem(
