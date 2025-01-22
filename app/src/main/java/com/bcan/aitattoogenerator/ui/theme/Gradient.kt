@@ -16,3 +16,11 @@ val describeTattooTextFieldGradient = Brush.linearGradient(
         AzureRadiance
     )
 )
+
+val generateButtonGradient = Brush.linearGradient(
+    colors = listOf(
+        Heliotro,
+        CornflowerBlue,
+        AzureRadiance
+    )
+)
