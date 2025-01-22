@@ -2,14 +2,14 @@ package com.bcan.aitattoogenerator.ui.theme
 
 import androidx.compose.ui.graphics.Brush
 
-val getProButtonGradient = Brush.horizontalGradient(
+val getProButtonGradient = Brush.linearGradient(
     colors = listOf(
         RoyalBlue,
         Heliotrope
     )
 )
 
-val describeTattooTextFieldGradient = Brush.horizontalGradient(
+val describeTattooTextFieldGradient = Brush.linearGradient(
     colors = listOf(
         Heliotrope,
         RoyalBlue,
