@@ -8,3 +8,11 @@ val getProButtonGradient = Brush.horizontalGradient(
         Heliotrope
     )
 )
+
+val describeTattooTextFieldGradient = Brush.horizontalGradient(
+    colors = listOf(
+        Heliotrope,
+        RoyalBlue,
+        AzureRadiance
+    )
+)
