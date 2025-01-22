@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,6 +16,9 @@ import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import com.bcan.aitattoogenerator.R
+import com.bcan.aitattoogenerator.ui.theme.SmokeyBlack
+import com.bcan.aitattoogenerator.ui.theme.AzureRadiance
+import com.bcan.aitattoogenerator.ui.theme.Boulder
 import kotlinx.serialization.Serializable
 
 val bottomNavDestinations =
@@ -37,7 +41,7 @@ fun AiTattooGeneratorBottomBar(
     navController: NavController
 ) {
     BottomAppBar(
-        containerColor = Color.White,
+        containerColor = SmokeyBlack,
         modifier = Modifier.height(80.dp)
     ) {
         bottomNavDestinations.forEach { destination ->
@@ -52,7 +56,15 @@ fun AiTattooGeneratorBottomBar(
                         contentDescription = "Icon"
                     )
                 },
-                label = { Text(text = destination.text) }
+                label = { Text(text = destination.text) },
+                colors = NavigationBarItemDefaults.colors()
+                    .copy(
+                        selectedIconColor = AzureRadiance,
+                        selectedTextColor = AzureRadiance,
+                        selectedIndicatorColor = Color.Transparent,
+                        unselectedIconColor = Boulder,
+                        unselectedTextColor = Boulder,
+                    )
             )
         }
     }
