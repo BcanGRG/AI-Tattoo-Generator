@@ -11,7 +11,8 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 val Black = Color(0xFF000000)
-val CodGray = Color(0xFF111111) // Background Color
+val Black11 = Color(0xFF111111) // Background Color
+val CodGray = Color(0xFF1A1A1A)
 val AbbeyGray = Color(0xFF48484A)
 val White = Color(0xFFFFFFFF)
 val Tundora = Color(0xFF2A2A2A)// Advanced Design Background
