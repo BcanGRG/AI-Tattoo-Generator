@@ -18,6 +18,9 @@ ksp = "2.0.21-1.0.27"
 kotlinx-serialization = "1.6.0"
 compose-navigation = "2.8.5"
 compose-material-icons = "1.7.6"
+google-services = "4.4.2"
+firebase-bom = "33.8.0"
+
 
 
 [libraries]
@@ -64,6 +67,10 @@ lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", versio
 kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 
+# Firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -71,5 +78,6 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+google-service = { id = "com.google.gms.google-services", version.ref = "google-services" }
 
 
